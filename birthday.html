@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Reminder</title>
+   <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 320px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    color: #7c7cff;
+    margin-bottom: 15px;
+}
+
+.birthday-section {
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #10af94a6;
+    margin-bottom: 10px;
+}
+
+.birthday-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.birthday-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.upcoming-birthday h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+   
+}
+
+.upcoming-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-img-small {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(122, 26, 66);
+    margin-right: 10px;
+}
+
+.upcoming-info {
+    text-align: left;
+}
+
+.name {
+    font-weight: bold;
+    color: #333;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+}
+
+.divider {
+    height: 3px;
+    background-color: #000000;
+    margin: 20px 0;
+}
+.box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 0 10px;
+    }
+
+
+    
+   </style>
+</head>
+<body>
+    <div class="container">
+
+        <h2>Birthday Reminder</h2>
+        
+        <div class="birthday-section">
+            <h2>Happy Birthday</h2>
+            <img id="current-profile-img" alt="Profile Picture" class="profile-img">
+            <p id="current-birthday-name" class="birthday-name"></p>
+            <p id="current-birthday-date" class="birthday-date"></p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="upcoming-birthday">
+            <h3>Upcoming Birthday</h3>
+           
+        </div>
+
+        <div class="upcoming-birthday">
+            <p id="current-birthday-name" class="birthday-name"></p>
+            <p id="current-birthday-date" class="birthday-date"></p>
+            <div id="upcoming-birthday-list"></div>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
